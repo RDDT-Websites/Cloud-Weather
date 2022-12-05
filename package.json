@@ -1,0 +1,22 @@
+{
+  "name": "cloud-weather",
+  "version": "1.0.0",
+  "description": "A state of the art weather app.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RDDT-Websites/Cloud-Weather.git"
+  },
+  "author": "RDDT-Websites",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RDDT-Websites/Cloud-Weather/issues"
+  },
+  "homepage": "https://github.com/RDDT-Websites/Cloud-Weather#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

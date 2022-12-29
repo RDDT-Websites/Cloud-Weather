@@ -1,7 +1,13 @@
 const express = require('express')
-const app = express()
 const port = 3000
 const path = require("path")
+const axios = require("axios")
+
+const bodyParser = require('body-parser');
+
+const app = express();
+app.use(bodyParser.urlencoded({ extended: true }));
+
 
 app.use(express.static(path.join(__dirname, "/static/")))
 
@@ -25,6 +31,20 @@ app.get('/contact', (req, res) => {
 })
 app.get('/login', (req, res) => {
   res.sendFile(path.join(__dirname, "/pages/login.html"))
+})
+
+
+app.post('/api/weather', (req, res) => {
+  lat = req.body.lat
+  long = req.body.long
+
+    
+    axios.get("https://api.openweathermap.org/data/2.5/weather?lat=" + lat +"&lon=" + long + "&appid=10c33e2b3a0f45acd14008c3a4a46079").then(resp => {
+        console.log("DATA REQUEST INBOUND\n\nResponse: " + JSON.stringify(resp.data))
+        res.send(JSON.stringify(resp.data))
+    return;
+    })
+   
 })
 
 

@@ -20,6 +20,7 @@
   "homepage": "https://github.com/RDDT-Websites/Cloud-Weather#readme",
   "dependencies": {
     "@cyclic.sh/dynamodb": "^0.0.32",
+    "@mdi/font": "^7.1.96",
     "axios": "^1.2.2",
     "body-parser": "^1.20.1",
     "bulma": "^0.9.4",

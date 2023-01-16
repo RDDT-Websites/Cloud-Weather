@@ -4,7 +4,9 @@
   "description": "A state of the art weather app.",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "css-build": "node-sass --omit-source-map-url sass/main.sass css/main.css",
+    "css-watch": "npm run css-build -- --watch",
+    "start": "npm run css-watch"
   },
   "repository": {
     "type": "git",
@@ -18,9 +20,12 @@
   "homepage": "https://github.com/RDDT-Websites/Cloud-Weather#readme",
   "dependencies": {
     "@cyclic.sh/dynamodb": "^0.0.32",
+    "@mdi/font": "^7.1.96",
     "axios": "^1.2.2",
     "body-parser": "^1.20.1",
+    "bulma": "^0.9.4",
     "express": "^4.18.2",
+    "node-sass": "^8.0.0",
     "tailwindcss": "^3.2.4"
   }
 }

@@ -1,175 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css"
-  />
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/extra.css">
+  <title>Cloud Weather by RDDT Websites</title>
 </head>
-<body class="bg-slate-300">
-  <div class="flex"> <!--Cotent Wrapper-->
-  <div class="navselect w-80">
-    <span
-    class="absolute text-white text-4xl top-5 left-4 cursor-pointer"
-    onclick="openSidebar()"
-  >
-    <i class="bi bi-filter-left px-2 bg-gray-900 rounded-md"></i>
-  </span>
-  <div
-    class="sidebar fixed top-0 bottom-0 lg:left-0 p-2 w-[300px] overflow-y-auto text-center bg-gray-900"
-  >
-    <div class="text-gray-100 text-xl">
-      <div class="p-2.5 mt-1 flex items-center">
-        <i class="bi bi-cloud-lightning-rain-fill px-2 py-1 rounded-md bg-blue-600"></i>
-        <h1 class="font-bold text-gray-200 text-[15px] ml-3">Cloud</h1>
-        <i
-          class="bi bi-x cursor-pointer ml-28"
-          onclick="openSidebar()"
-        ></i>
+<body><br>
+  <div class="container is-fluid">
+    <div class="columns">
+      <div class="column is-one-quarter">
+        <article class="message is-large is-primary">
+          <div class="message-header">
+            <p>Navigation</p>
+          </div>
+          <div class="message-body">
+            <aside class="menu">
+              <p class="menu-label">
+                CLOUD WEATHER
+              </p>
+              <ul class="menu-list">
+                <li>
+                  <span class="icon-text">
+                    <span class="icon is-medium">
+                      <ion-icon name="rainy-outline"></ion-icon>
+                    </span>
+                    <span><a>Landing Page</a></span>
+                  </span>
+                </li>
+                <li>
+                  <span class="icon-text">
+                    <span class="icon is-medium">
+                      <ion-icon name="briefcase-outline"></ion-icon>
+                    </span>
+                    <span><a>About Us</a></span>
+                  </span>
+                </li>
+                <li>
+                  <span class="icon-text">
+                    <span class="icon is-medium">
+                      <ion-icon name="call-outline"></ion-icon>
+                    </span>
+                    <span><a>Contact</a></span>
+                  </span>
+                </li>
+              </ul>
+              <p class="menu-label">
+                WEATHER
+              </p>
+              <ul class="menu-list">
+                <li>
+                  <span class="icon-text">
+                    <span class="icon is-medium">
+                      <ion-icon name="newspaper-outline"></ion-icon>
+                    </span>
+                    <span><a>Hourly</a></span>
+                  </span>
+                </li>
+                <li>
+                  <span class="icon-text">
+                    <span class="icon is-medium">
+                      <ion-icon name="cloud-circle-outline"></ion-icon>
+                    </span>
+                    <span><a>Forecast</a></span>
+                  </span>
+                  <ul>
+                    <li>
+                      <span class="icon-text">
+                        <span class="icon is-medium">
+                          <ion-icon name="time-outline"></ion-icon>
+                        </span>
+                        <span><a>Hourly</a></span>
+                      </span>
+                    </li>
+                    <li>
+                      <span class="icon-text">
+                        <span class="icon is-medium">
+                          <ion-icon name="calendar-outline"></ion-icon>
+                        </span>
+                        <span><a>Daily</a></span>
+                      </span>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="icon-text">
+                    <span class="icon is-medium">
+                      <ion-icon name="disc-outline"></ion-icon>
+                    </span>
+                    <span><a>Radar</a></span>
+                  </span>
+                </li>
+              </ul>
+              <p class="menu-label">
+                ACCOUNT
+              </p>
+              <ul class="menu-list">
+                <li>
+                  <span class="icon-text">
+                    <span class="icon is-medium">
+                      <ion-icon name="person-outline"></ion-icon>
+                    </span>
+                    <span><a>Manage Account</a></span>
+                  </span>
+                </li>
+                <li>
+                  <span class="icon-text">
+                    <span class="icon is-medium">
+                      <ion-icon name="log-out-outline"></ion-icon>
+                    </span>
+                    <span><a>Sign Out</a></span>
+                  </span>
+                </li>
+              </ul>
+            </aside>
+          </div>
+        </article>
       </div>
-      <div class="my-2 bg-gray-600 h-[1px]"></div>
-    </div>
-    <div
-      class="p-2.5 flex items-center rounded-md px-4 duration-300 cursor-pointer bg-gray-700 text-white"
-    >
-      <i class="bi bi-search text-sm"></i>
-      <input
-        type="text"
-        placeholder="Search"
-        class="text-[15px] ml-4 w-full bg-transparent focus:outline-none"
-      />
-    </div>
-    <div>
-        <a href="/">
-    <div
-      class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-blue-600 text-white"
-    >
-      <i class="bi bi-house-door-fill"></i>
-      <span class="text-[15px] ml-4 text-gray-200 font-bold">Home</span>
-    </div>
-</a>
-</div>
-        
-    <div
-    class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-blue-600 text-white"
-    onclick="dropdown()"
-  >
-    <i class="bi bi-cloud-drizzle"></i>
-    <div class="flex justify-between w-full items-center">
-      <span class="text-[15px] ml-4 text-gray-200 font-bold">Weather</span>
-      <span class="text-sm rotate-180" id="arrow">
-        <i class="bi bi-chevron-down"></i>
-      </span>
-    </div>
-</div>
-  <div
-    class="text-left text-sm mt-2 w-4/5 mx-auto text-gray-200 font-bold"
-    id="submenu"
-  >
-  <div>
-    <a href="/weather">
-  <div
-  class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-blue-600 text-white"
->
-  <i class="bi bi-brightness-high"></i>
-  <span class="text-[15px] ml-4 text-gray-200 font-bold">Weather Forecast</span>
-
-</div>
-</a>
-</div>
-
-<div>
-    <a href="/hourly-forecast">
-  <div
-  class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-blue-600 text-white"
->
-  <i class="bi bi-hourglass"></i>
-  <span class="text-[15px] ml-4 text-gray-200 font-bold">Hourly Forecast</span>
-</div>
-</a>
-</div>
-
-<div>
-    <a href="/misc-forecast">
-  <div
-  class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-blue-600 text-white"
->
-  <i class="bi bi-wind"></i>
-  <span class="text-[15px] ml-4 text-gray-200 font-bold">Misc Forecasts</span>
-
-</div>
-</a>
-</div>
-</div>
-
-  
-
-<div>
-    <a href="/about">
-    <div
-    class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-blue-600 text-white"
-  >
-    <i class="bi bi-journal-text"></i>
-    <span class="text-[15px] ml-4 text-gray-200 font-bold">About</span>
-  </div>
-  </a>
-</div>
-
-<div>
-    <a href="/contact">
-  <div
-    class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-blue-600 text-white"
-  >
-    <i class="bi bi-chat-dots"></i>
-    <span class="text-[15px] ml-4 text-gray-200 font-bold">Contact</span>
-  </div>
-  </a>
-</div>
-
-<div>
-    <a href="/login">
-    <div
-    class="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-blue-600 text-white"
-  >
-    <i class="bi bi-person-circle"></i>
-    <span class="text-[15px] ml-4 text-gray-200 font-bold">Login</span>
-  </div>
-</a>
-  </div>
-
-  <script type="text/javascript">
-    function dropdown() {
-      document.querySelector("#submenu").classList.toggle("hidden");
-      document.querySelector("#arrow").classList.toggle("rotate-0");
-    }
-    dropdown();
-
-    function openSidebar() {
-      document.querySelector(".sidebar").classList.toggle("hidden");
-      if(document.querySelector(".sidebar").classList.contains("hidden")) {
-        document.querySelector(".navselect").classList.add("w-24");
-        document.querySelector(".navselect").classList.remove("w-80");
-      } else if(!document.querySelector(".sidebar").classList.contains("hidden")) {
-        document.querySelector(".navselect").classList.remove("w-24");
-        document.querySelector(".navselect").classList.add("w-80");
-      }
-    }
-  </script>
-</div>
-</div>
-
-  <main class="">
-    <div class="flex rounded-lg bg-slate-600">
-      <div>
-        <span>T-prod: n/a</span>
+      <div class="column is-three-quarters">
+        <div class="notification is-primary">
+          <h1 class="is-size-2">Weather Outlook</h1>
+          <div class="columns">
+            <div class="column is-one-third">
+              <div class="notification is-primary is-light">
+                <p class="is-size-3"><strong>Right Now</strong></h1>
+                <p id="temperature" class="is-size-3">XX°</p>
+                <p id="humidity" class="is-size-5">XX% Humidity</p>
+                <p id="feelslike" class="is-size-5">Feels like XX°</p>
+              </div>
+            </div>
+            <div class="column">
+              <div class="notification is-primary is-light">
+                <h1 class="is-size-3"><Strong>Hourly</Strong></h1>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </main>
-  </div>
+  </div><br>
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        <strong>Cloud Weather</strong> by <a href="https://github.com/tttylerr">Tyler Kitts</a> and <a href="https://gaminglizard9.github.io">Dawson Call</a>. 
+        This website is still in beta, please don't expect the world from it.
+        The source code is avalible at <a href="https://github.com/RDDT-Websites/Cloud-Weather">GitHub.</a>
+      </p>
+    </div>
+  </footer>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>

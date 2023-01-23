@@ -6,7 +6,7 @@
   "scripts": {
     "css-build": "node-sass --omit-source-map-url sass/main.sass css/main.css",
     "css-watch": "npm run css-build -- --watch",
-    "start": "npm run css-watch"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
